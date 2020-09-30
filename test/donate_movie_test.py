@@ -9,6 +9,7 @@ class DonateMovieTest(unittest.TestCase):
         library = Library()
         library.donate(movie)
         self.assertTrue(library.contains(library, movie))
+        self.assertEqual(1, movie.copies)
 
 
 if __name__ == '__main__':

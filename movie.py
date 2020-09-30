@@ -1,2 +1,3 @@
 class Movie(object):
-    pass
+    def __init__(self):
+        self.copies = 0

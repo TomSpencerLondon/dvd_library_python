@@ -8,10 +8,7 @@ class DonateMovieTest(unittest.TestCase):
         movie = Movie()
         library = Library()
         library.donate(movie)
-        self.assertTrue(self.contains(library, movie))
-
-    def contains(self, library, movie):
-        return movie in library.catalogue
+        self.assertTrue(library.contains(library, movie))
 
 
 if __name__ == '__main__':

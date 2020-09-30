@@ -10,7 +10,7 @@ class Library(object):
         self.catalogue = []
 
     def donate(self, movie):
-        pass
+        self.catalogue.append(movie)
 
 class DonateMovieTest(unittest.TestCase):
     def test_donate_movie(self):

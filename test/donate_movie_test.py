@@ -1,16 +1,7 @@
 import unittest
 
-
-class Movie(object):
-    pass
-
-
-class Library(object):
-    def __init__(self):
-        self.catalogue = []
-
-    def donate(self, movie):
-        self.catalogue.append(movie)
+from library import Library
+from movie import Movie
 
 class DonateMovieTest(unittest.TestCase):
     def test_donate_movie(self):

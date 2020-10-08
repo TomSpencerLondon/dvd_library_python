@@ -1,11 +1,11 @@
 class Library(object):
     def __init__(self):
-        self.catalogue = []
+        self._catalogue = []
 
     def donate(self, movie):
-        self.catalogue.append(movie)
+        self._catalogue.append(movie)
         movie.add_copy()
 
 
     def contains(self, library, movie):
-        return movie in library.catalogue
+        return movie in library._catalogue

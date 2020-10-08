@@ -6,11 +6,13 @@ from movie import Movie
 
 class DonateMovieTest(unittest.TestCase):
     def test_donate_movie(self):
-        movie = Movie()
-        library = Library()
-        library.donate(movie)
-        self.assertTrue(library.contains(library, movie))
-        self.assertEqual(1, movie.get_copies())
+        self.assertTrue(self.library.contains(self.library, self.movie))
+        self.assertEqual(1, self.movie.get_copies())
+
+    def setUp(self):
+        self.movie = Movie()
+        self.library = Library()
+        self.library.donate(self.movie)
 
 
 if __name__ == '__main__':

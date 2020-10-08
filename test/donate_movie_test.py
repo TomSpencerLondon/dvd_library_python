@@ -13,6 +13,5 @@ class DonateMovieTest(unittest.TestCase):
         self.assertEqual(1, movie.get_copies())
 
 
-
 if __name__ == '__main__':
     unittest.main()

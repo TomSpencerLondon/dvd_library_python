@@ -5,7 +5,7 @@ from movie import Movie
 
 
 class DonateMovieTest(unittest.TestCase):
-    def test_donate_movie(self):
+    def test_movie_add_to_library(self):
         self.assertTrue(self.library.contains(self.library, self.movie))
 
     def test_copy_added(self):
